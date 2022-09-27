@@ -1,3 +1,5 @@
+/* General settings */
+
 html {
         box-sizing: border-box;
 }
@@ -14,61 +16,14 @@ html {
         --secondary-color: #757575;
         --dark-color: #2F303A;
         --primary-white: #FFFFFF;
-}
-
-.container-header-wrapper {
-        display: inline
-}
-
-.logo-header-logo {
-        font-family: 'Raleway';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 26px;
-                line-height: 31px;
-                /* identical to box height */
-        
-                letter-spacing: 0.03em;
-        
-}
-
-.header-nav-item {
-        font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.02em;
-        
-                color: #2196F3;
-}
-
-.header-nav-item1 {
-        font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.02em;
-        
-                color: #212121;
-}
-
-.header-nav-item2 {
-        font-family: 'Roboto';
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 16px;
-                letter-spacing: 0.02em;
-        
-                color: #212121;
+        --secondary-white: #F5F4FA;
 }
 
 body {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
         font-size: 14px;
         letter-spacing: 0.03em;
+        line-height: 1.71;
         color: var(--primary-color);
 }
 
@@ -94,7 +49,6 @@ a {
 
 a,
 button {
-        cursor: pointer;
         margin: 0;
         padding: 0;
 }
@@ -114,53 +68,9 @@ p {
         margin-bottom: 0;
 }
 
-/* Utilities  */
-.container {
-        width: 1200px;
-        margin: 0 auto;
-        padding: 0px 15px;
-        /* outline: 2px red solid; */
-}
+/* 1st Page */
+/* Header Section */
 
-.section {
-        padding-top: 94px;
-        padding-bottom: 94px;
-}
-
-.accent {
-        color: var(--accent-color);
-}
-
-.visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-}
-
-.current {
-        color: var(--accent-color);
-}
-
-
-
-/* Components  */
-.logo {
-        font-family: 'Raleway';
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        color: #000000;
-}
-
-
-/* Header Section  */
 header {
         border-bottom: 1px solid #ECECEC;
 }
@@ -172,6 +82,7 @@ header a {
 
 .header-wrapper {
         display: flex;
+        align-items: center;
 }
 
 .header-logo {
@@ -181,9 +92,20 @@ header a {
 .header-nav {
         display: flex;
         align-items: center;
+        justify-content: baseline;
+        /* Добавил паддинга для выравнивания */
+        padding: 25px; 
+        padding-left: 93px;
+        padding-right: 343px;
 }
 
 .header-nav-list {
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
         display: flex;
         gap: 50px;
 }
@@ -192,7 +114,9 @@ header a {
 .contacts-list {
         display: flex;
         gap: 50px;
+        /* padding-right: 215px; */
         align-items: center;
+        justify-content: baseline;
         margin-left: auto;
 }
 
@@ -216,7 +140,132 @@ header a {
         color: var(--accent-color);
 }
 
+.container-header-wrapper {
+                display: flex;
+                text-align: center;
+                align-items: center;
+                margin: 0px 351px;
+                /* width: 1600px;  */
+                /* width: 1200px; */
+                min-height: 80px;
+}
+
+.logo-header-logo {
+        display: inline-block;
+                font-family: 'Raleway', sans-serif;
+                /* padding: 40px 200px; */
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+
+}
+
+.header-nav-item {
+        font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 0.8;
+                letter-spacing: 0.02em;
+                color: var(--accent-color);
+}
+
+.header-nav-item {
+        font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 0.8;
+                letter-spacing: 0.02em;
+                color: var(--primary-color);
+}
+
+.header-nav-item {
+        font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 0.8;
+                letter-spacing: 0.02em;
+                color: var(--primary-color);
+}
+
 /* Hero Section  */
+/* Utilities  */
+
+.container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0px 15px;
+}
+
+.section {
+        justify-content: center;
+        padding-top: 94px;
+        padding-bottom: 94px;
+}
+
+.list-portfolio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+        flex-wrap: wrap;
+        padding: auto;
+}
+
+.accent {
+        color: var(--accent-color);
+}
+
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
+.current {
+        color: var(--accent-color);
+}
+
+/* Components  */
+
+.logo {
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: #000000;
+}
+
+main {
+        margin: 696px 615 890 615;
+        width: 1920px;
+        border-radius: 4px;
+        background-color: var(--primary-white);
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+
 .hero-section {
         background-color: var(--dark-color);
         padding: 200px 0px;
@@ -237,18 +286,22 @@ header a {
 }
 
 .hero-button {
-        background: var(--accent-color);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.06em;
+
         color: var(--primary-white);
+        background: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
         padding: 10px 32px;
         border: none;
         margin: 0 auto;
+
         display: block;
+        cursor: pointer;
 }
 
 .hero-button:focus,
@@ -256,7 +309,9 @@ header a {
         background: #188CE8;
 }
 
+
 /* Benefits Section  */
+
 .benefits-list {
         display: flex;
         gap: 30px;
@@ -266,11 +321,11 @@ header a {
         font-weight: 700;
         line-height: 1.15;
         text-transform: uppercase;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
 }
 
 .benefits-paragraph {
-        line-height: 1.71;
+        /* line-height: 1.71; */
         color: var(--secondary-color);
         width: 270px;
 }
@@ -378,6 +433,7 @@ footer {
 }
 
 /* Options section */
+
 .options-list {
         display: flex;
         justify-content: center;
@@ -407,6 +463,7 @@ footer {
 }
 
 /* Partners section */
+
 .partners-list {
         display: flex;
         flex-wrap: wrap;
@@ -433,3 +490,121 @@ footer {
         line-height: 1.88;
         color: var(--secondary-color);
 }
+
+/* 2nd Page */
+/* Buttons */
+
+.wrapper-button {}
+
+.list-button {
+        display: inline-block;
+                background-color: var(--accent-color);
+                color: var(--primary-color);
+        
+                font-family: inherit;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.62px;
+                letter-spacing: 0.03em;
+        
+                text-align: center;
+                padding: 6px 22px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+}
+
+.button-list {
+        display: inline-block;
+                justify-content: center;
+                min-width: 73px;
+                padding: 6px 22px;
+                list-style: none;
+                border-radius: 50px;
+                background-color: var(--primary-white);
+}
+
+.card-button {
+        display: flex;
+        justify-content: center;
+        font-family: Roboto, sans-serif;
+                font-weight: 700;
+                padding: 0px 10px;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                line-height: 1.9px;
+                letter-spacing: 00.06em;
+                border: solid transparent;
+                text-decoration: none;
+                color: var(--primary-color);
+                background-color: var(--secondary-white);
+}
+
+.card-button:hover {
+        background-color: var(--accent-color);
+                filter: brightness(110%);
+                transform: translate(-3px, -3px) scale(1.02);
+                box-shadow: 2px 3px 3px 0 rgba(100, 100, 100, 0.6);
+}
+
+/* Portfolio */
+
+.container-portfolio {
+        width: 1230px;
+        padding: 0px 15px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.box {
+        width: 370px;
+        /* width: calc(100% - 60px / 4); */
+        /* calc0((100% - кол-во margin в строке * значение margin) , кол-во элементов в строке */
+        /* width: calc(100% / 4); */
+        margin-bottom: 30px;
+        margin-right: 30px;
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        background-color: white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.box:nth-child(3n) {
+        margin-right: 0px;
+}
+
+.product-title {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.18;
+                margin-bottom: 10px;
+
+                padding-top: 20px;
+                padding-left: 24px;
+                padding-right: 24px;
+}
+
+.paragraph {
+                font-size: 16px;
+                line-height: 1.18;
+                color: var(--secondary-color);
+
+                padding-bottom: 20px;
+                padding-left:24px;
+                padding-right: 24px;
+}
+
+/* Альтернатива */
+
+/* .box:not(:nth-child(3n)) {
+        margin-right: 30px;
+}
+
+.box:not(:last-child(-n + 3)) {
+        margin-bottom: 30px;
+} */
+
